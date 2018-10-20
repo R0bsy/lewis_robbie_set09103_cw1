@@ -1,0 +1,75 @@
+<!doctype html>
+
+<head>
+	<title>League of Legends</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />	
+	
+	<style>
+		body{
+			padding-top: 50px;
+			background-color: grey;
+		}
+	
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+			data-toggle="collapse" data-target="#navbar" aria-expand					ed="false"
+			aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button
+			<a class="navbar-brand" href="#"></a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="/">Home</a></li>
+			<li><a href="champions">Champions</a></li>
+			<li class="active"><a href="tournaments">Tournaments</a></li>		
+		</ul>
+		</div>
+	</div>
+	</nav>
+	
+	<div class="container">
+		<h1>Tournaments</h1>
+		<h2>World Championship</h2>
+				
+	
+	<p class="lead">There are multiple big tournaments every year for league of legends. Undoubtedly the biggest one is the World Championship where all the best teams from around the world come to compete and see once and for all who deserves the top spot. 
+	<br>
+	<br>
+Season 7 Winners : Samsung Galaxy
+<br>
+<br>
+Season 6 Winners : SK Telecom T1
+<br>
+<br>
+Season 5 Winners : SK Telecom T1
+<br>
+<br>
+Season 4 Winners : Samsung Galaxy White
+<br>
+<br>
+Season 3 Winners : SK Telecom T1
+<br>
+<br>
+Season 2 Winners : Taipei Assassins
+<br>
+<br>
+Season 1 Winners : Fnatic
+	</p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js')
+		}}"></script>
+</body>
+</html>

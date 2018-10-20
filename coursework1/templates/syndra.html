@@ -1,0 +1,51 @@
+<!doctype html>
+
+<head>
+	<title>League of Legends</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />	
+	
+	<style>
+		body{
+			padding-top: 50px;
+			background-color: grey;
+		}
+	
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+			data-toggle="collapse" data-target="#navbar" aria-expand					ed="false"
+			aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button
+			<a class="navbar-brand" href="#"></a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="/">Home</a></li>
+			<li class="active"><a href="/champions">Champions</a></li>			<li><a href="/tournaments">Tournaments</a></li>		
+
+		</ul>
+		</div>
+	</div>
+	</nav>
+	
+	<div class="container">
+		<h1>Syndra</h1>
+					
+	<img src="{{url_for('static', filename='Syndra.png')}}"/>	
+	<p class="lead">Syndra is a mage who focuses on creating and manipulating dark spheres to damage and dirupt her enemies. When played to perfection, Syndra can take out her enemies without even taking damage back. She is vey versatile as she can fit in many different teamcomps but she is immobile and squishy. Poor positioning and awareness will cost you a lot.</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js')
+		}}"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+
+<head>
+	<title>League of Legends</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />	
+	
+	<style>
+		body{
+			padding-top: 50px;
+			background-color: grey;
+		}
+	
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+			data-toggle="collapse" data-target="#navbar" aria-expand					ed="false"
+			aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button
+			<a class="navbar-brand" href="#"></a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="/">Home</a></li>
+			<li class="active"><a href="/champions">Champions</a></li>			<li><a href="/tournaments">Tournaments</a></li>		
+
+		</ul>
+		</div>
+	</div>
+	</nav>
+	
+	<div class="container">
+		<h1>Zed</h1>
+					
+	<img src="{{url_for('static', filename='Zed.png')}}"/>	
+	<p class="lead">Zed is the classic assassin in LoL. He's extremely good at taking one champion out of the fight, but then loses a lot of his power once his ultimate is on cooldown. He also however has a great laning phase in most matchups and can easily snowball in the early-game, making him a great champion to play in solo queue.</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js')
+		}}"></script>
+</body>
+</html>

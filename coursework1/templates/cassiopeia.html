@@ -1,0 +1,51 @@
+<!doctype html>
+
+<head>
+	<title>League of Legends</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />	
+	
+	<style>
+		body{
+			padding-top: 50px;
+			background-color: grey;
+		}
+	
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+			data-toggle="collapse" data-target="#navbar" aria-expand					ed="false"
+			aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button
+			<a class="navbar-brand" href="#"></a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="/">Home</a></li>
+			<li class="active"><a href="/champions">Champions</a></li>			<li><a href="/tournaments">Tournaments</a></li>		
+
+		</ul>
+		</div>
+	</div>
+	</nav>
+	
+	<div class="container">
+		<h1>Cassiopeia</h1>
+					
+	<img src="{{url_for('static', filename='Cassiopeia.png')}}"/>	
+	<p class="lead">Cassiopeia a great champion due to her high damage per second and utility. She works best against non dive heavy team comps and with teams that can protect and peel for her. In teamfights, if not killed immediately, she can often put out more DPS than the rest of her team combined due to low cooldown high damage E and Q spam. Her late game damage potential is unparalleled. Furthermore, her dragon and baron DPS is insane, allowing for the rapid taking of these objectives at any point</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js')
+		}}"></script>
+</body>
+</html>
